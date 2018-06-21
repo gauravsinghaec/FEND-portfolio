@@ -91,6 +91,7 @@ header img {
 .projects {
 	font-family: "Maven Pro", sans-serif;
 	border: outset thin;
+	height : 300px;
 	transition-duration: 0.5s;
 	box-shadow: 2px 2px 20px 2px #000;
 	text-align: center;
@@ -160,12 +161,24 @@ header img {
 @media screen and (max-width: 30rem) {
 	.projects {
 		width: 100%;
-		margin: 0px 0px 20px 0px;
+		margin: 0px 0px 30px 0px;
 	}
 
 	.projects:last-of-type {
 		margin-bottom: 0px;
 	}
+
+	.come-2x-1x {
+	  animation: come-2x-1x 0.4s ease forwards; }
+
+	.come-0x-1x {
+	  animation: come-0x-1x 0.4s ease forwards; }
+
+	.go-out {
+	  animation: go-out 0.4s ease forwards; }
+
+	.come-2x {
+	  animation: come-2x 0.4s ease forwards; }
 }
 
 
@@ -219,3 +232,40 @@ header img {
 		margin: 0 10px;
 	}
 }
+
+
+.social .fa {
+  transition-property: all;
+  transition-duration: 0.2s; }
+
+.social .fa:hover {
+  transform: scale(1.5); }
+
+@keyframes come-2x {
+  from {
+	transform: scale(1);
+	}
+  to {
+    transform: scale(1.05);
+    box-shadow: 0 8px 10px 0 rgba(255, 255, 255, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    } }
+
+@keyframes come-2x-1x {
+  from {
+	transform: scale(1.05);
+	}
+  to {
+    transform: scale(1);} }
+
+@keyframes come-0x-1x {
+  from {
+	transform: translateX(-400px) scale(0.8);
+	}
+  to {
+    transform: translateX(0px) scale(0.9);} }
+
+@keyframes go-out {
+  from {
+    transform: scale(0.9); }
+  to {
+    transform: translateX(400px) scale(0.8); } }

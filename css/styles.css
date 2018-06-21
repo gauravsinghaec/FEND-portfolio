@@ -76,6 +76,7 @@ header img {
 .projects {
   font-family: "Maven Pro", sans-serif;
   border: outset thin;
+  height: 300px;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   -webkit-box-shadow: 2px 2px 20px 2px #000;
@@ -131,9 +132,21 @@ header img {
 @media screen and (max-width: 30rem) {
   .projects {
     width: 100%;
-    margin: 0px 0px 20px 0px; }
+    margin: 0px 0px 30px 0px; }
   .projects:last-of-type {
-    margin-bottom: 0px; } }
+    margin-bottom: 0px; }
+  .come-2x-1x {
+    -webkit-animation: come-2x-1x 0.4s ease forwards;
+            animation: come-2x-1x 0.4s ease forwards; }
+  .come-0x-1x {
+    -webkit-animation: come-0x-1x 0.4s ease forwards;
+            animation: come-0x-1x 0.4s ease forwards; }
+  .go-out {
+    -webkit-animation: go-out 0.4s ease forwards;
+            animation: go-out 0.4s ease forwards; }
+  .come-2x {
+    -webkit-animation: come-2x 0.4s ease forwards;
+            animation: come-2x 0.4s ease forwards; } }
 
 /* Styles for header about section */
 .about-container {
@@ -173,3 +186,81 @@ header img {
     min-height: 40vh; }
   #about-body p {
     margin: 0 10px; } }
+
+.social .fa {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s; }
+
+.social .fa:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5); }
+
+@-webkit-keyframes come-2x {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 8px 10px 0 rgba(255, 255, 255, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 10px 0 rgba(255, 255, 255, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19); } }
+
+@keyframes come-2x {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 8px 10px 0 rgba(255, 255, 255, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 10px 0 rgba(255, 255, 255, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19); } }
+
+@-webkit-keyframes come-2x-1x {
+  from {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes come-2x-1x {
+  from {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes come-0x-1x {
+  from {
+    -webkit-transform: translateX(-400px) scale(0.8);
+            transform: translateX(-400px) scale(0.8); }
+  to {
+    -webkit-transform: translateX(0px) scale(0.9);
+            transform: translateX(0px) scale(0.9); } }
+
+@keyframes come-0x-1x {
+  from {
+    -webkit-transform: translateX(-400px) scale(0.8);
+            transform: translateX(-400px) scale(0.8); }
+  to {
+    -webkit-transform: translateX(0px) scale(0.9);
+            transform: translateX(0px) scale(0.9); } }
+
+@-webkit-keyframes go-out {
+  from {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9); }
+  to {
+    -webkit-transform: translateX(400px) scale(0.8);
+            transform: translateX(400px) scale(0.8); } }
+
+@keyframes go-out {
+  from {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9); }
+  to {
+    -webkit-transform: translateX(400px) scale(0.8);
+            transform: translateX(400px) scale(0.8); } }
