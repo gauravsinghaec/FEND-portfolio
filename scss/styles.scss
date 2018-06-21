@@ -27,6 +27,7 @@ hr.star-bright {
 }
 
 #main-container {
+	margin-bottom: 3.5em;
 	padding: 1em;
 	background-color: #f1f1f1;
 }
@@ -87,6 +88,29 @@ header img {
 		letter-spacing: 0.2rem;
 	}
 }
+
+/* Styles for navigation menu */
+.navbar {
+	background: rgba(0, 0, 0, 0.65) !important;
+	width: 100% ;
+	margin-right: auto;
+	margin-left: auto;
+	}
+
+@media screen and (max-width: 30rem) {
+	.navbar {
+		width: 40vw;
+		left: 55vw; } }
+
+.navbar .nav-link {
+	color: white !important;
+	font-weight: bold;
+	text-transform: lowercase;
+	transition-property: all;
+	transition-duration: 0.5s; }
+
+.navbar .nav-link:hover {
+	transform: scale(1.08); }
 
 /* Styles for featured work */
 
@@ -266,19 +290,19 @@ header img {
 
 @keyframes come-2x {
   from {
-	transform: scale(1);
+	transform: scale(0.9);
 	}
   to {
-    transform: scale(1.05);
+    transform: scale(1.02);
     box-shadow: 0 8px 10px 0 rgba(255, 255, 255, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
     } }
 
 @keyframes come-2x-1x {
   from {
-	transform: scale(1.05);
+	transform: scale(1.02);
 	}
   to {
-    transform: scale(1);} }
+    transform: scale(0.9);} }
 
 @keyframes come-0x-1x {
   from {
