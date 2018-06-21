@@ -35,6 +35,12 @@ hr.star-bright {
 	color: #f4b408;
 }
 
+.section-heading {
+	font-family: "Maven Pro", sans-serif;
+	font-weight: lighter;
+	letter-spacing: 0.2rem;
+}
+
 #project-container, #header, #about-body {
 	max-width: 960px;
 	width: 100%;
@@ -82,11 +88,6 @@ header img {
 }
 
 /* Styles for featured work */
-#project-section h2 {
-	font-family: "Maven Pro", sans-serif;
-	font-weight: lighter;
-	letter-spacing: 0.2rem;
-}
 
 .projects {
 	font-family: "Maven Pro", sans-serif;
