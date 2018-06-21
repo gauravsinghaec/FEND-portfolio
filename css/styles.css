@@ -30,7 +30,8 @@ hr.star-bright {
 .section-heading {
   font-family: "Maven Pro", sans-serif;
   font-weight: lighter;
-  letter-spacing: 0.2rem; }
+  letter-spacing: 0.2rem;
+  text-align: center; }
 
 #project-container, #header, #about-body {
   max-width: 960px;
@@ -187,15 +188,33 @@ header img {
   #about-body p {
     margin: 0 10px; } }
 
+.social {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto; }
+
+.social h2 {
+  width: 100%; }
+
+.social a {
+  text-align: center;
+  color: black;
+  width: 25%; }
+
 .social .fa {
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s; }
+  -webkit-transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); }
 
 .social .fa:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5); }
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4); }
+
+@media screen and (min-width: 30rem) {
+  .social {
+    width: 20rem; } }
 
 @-webkit-keyframes come-2x {
   from {
@@ -235,16 +254,16 @@ header img {
 
 @-webkit-keyframes come-0x-1x {
   from {
-    -webkit-transform: translateX(-400px) scale(0.8);
-            transform: translateX(-400px) scale(0.8); }
+    -webkit-transform: translateX(-100%) scale(0.8);
+            transform: translateX(-100%) scale(0.8); }
   to {
     -webkit-transform: translateX(0px) scale(0.9);
             transform: translateX(0px) scale(0.9); } }
 
 @keyframes come-0x-1x {
   from {
-    -webkit-transform: translateX(-400px) scale(0.8);
-            transform: translateX(-400px) scale(0.8); }
+    -webkit-transform: translateX(-100%) scale(0.8);
+            transform: translateX(-100%) scale(0.8); }
   to {
     -webkit-transform: translateX(0px) scale(0.9);
             transform: translateX(0px) scale(0.9); } }
@@ -254,13 +273,13 @@ header img {
     -webkit-transform: scale(0.9);
             transform: scale(0.9); }
   to {
-    -webkit-transform: translateX(400px) scale(0.8);
-            transform: translateX(400px) scale(0.8); } }
+    -webkit-transform: translateX(-100%) scale(0.8);
+            transform: translateX(-100%) scale(0.8); } }
 
 @keyframes go-out {
   from {
     -webkit-transform: scale(0.9);
             transform: scale(0.9); }
   to {
-    -webkit-transform: translateX(400px) scale(0.8);
-            transform: translateX(400px) scale(0.8); } }
+    -webkit-transform: translateX(-100%) scale(0.8);
+            transform: translateX(-100%) scale(0.8); } }
